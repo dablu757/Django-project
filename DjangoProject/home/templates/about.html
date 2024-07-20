@@ -1,10 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>My First HTML Page in Django</title>
-</head>
-<body>
+{% extends 'base.html' %}
+{% block start %}
     <h1>  This is About Page </h1>
     <a href="/contanct/">
         Contanct 
@@ -14,5 +9,5 @@
     <a href="/">
         Home
     </a>
-</body>
-</html>
+{% endblock %}
+

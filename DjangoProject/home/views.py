@@ -2,10 +2,13 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 def home(request):
-    return render(request, "index.html")
+    context = {'page' : 'Home page'}
+    return render(request, "index.html", context=context)
     
 def about(request):
-    return render(request, "about.html")
+    context = {'page' : 'About page'}
+    return render(request, "about.html", context=context)
 
 def contanct(request):
-    return render(request, "contanct.html")
+    context = {'page' : 'Contanct page'}
+    return render(request, "contanct.html", context=context)
